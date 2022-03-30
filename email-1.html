@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Naga</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        :root {
+            --color-primary: #009688;
+            --color-primary-dark: #0A897D;
+            --color-blue: #1A73E8;
+            --color-dark: #242424;
+            --color-dark-2: #3E4657;
+            --color-gray: #5F6368;
+        }
+
+        body {
+            font-family: 'Roboto';
+            color: color-dark;
+            margin: 0;
+        }
+
+        a {
+            color: var(--color-blue);
+        }
+
+        .section {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            padding: 0 52px;
+        }
+
+        .email-title {
+            font-style: normal;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .email-subtitle {
+            color: var(--color-dark-2);
+            text-align: center;
+            margin: 0;
+        }
+
+        .email-description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 0;
+        }
+
+        .text-medium,
+        .link {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+        }
+
+        .btn-action {
+            width: 100%;
+            background-color: var(--color-primary);
+            font-size: 18px;
+            line-height: 21px;
+            color: white;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 38px;
+            text-transform: uppercase;
+        }
+
+        .btn-action:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-small {
+            font-weight: 400;
+            font-size: 10px;
+            color: var(--color-gray);
+            line-height: 11px;
+            margin: 0;
+        }
+
+        .border-bottom {
+            height: 6px;
+            background-color: var(--color-primary);
+            margin-top: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-template-type="html" style="height: auto;">
+        <table align="center" class="section">
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- Banner -->
+                        <table width="600" bgcolor="#3E4657" align="center">
+                            <tbody>
+                                <tr>
+                                    <td height="101" style="padding-left: 52px;">
+                                        <!-- Logo Auren -->
+                                        <img src="./images/logo-auren.svg" alt="" width="123px" height="24px">
+                                    </td>
+
+                                    <td height="101" style="padding-right: 42px; text-align: right;">
+                                        <!-- Logo Auren -->
+                                        <img src="./images/logo-naga-image.svg" alt="" width="23px" height="29px">
+                                        <img src="./images/logo-naga-text.svg" alt="" width="83px" height="31px"
+                                            style="margin-left: 14.5px;">
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Textos -->
+        <table align="center" class="section">
+            <tbody>
+                <tr>
+                    <td>
+                        <table bgcolor="white" align="center" class="margin-full ui-resizable" border="0"
+                            cellpadding="0" cellspacing="0" data-bgcolor="M2 Bgcolor 2">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td height="40" style="font-size:0px">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="email-title">
+                                                        ¿Olvidaste tu contraseña?
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="41" style="font-size:0px">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="container">
+                                                        <p class="email-description">
+                                                            ¡A todos nos pasa! Para iniciar sesión, por favor haz clic
+                                                            en el botón de abajo y sigue las instrucciones.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="container">
+                                                        <p class="email-description"
+                                                            style="margin-top: 24px; margin-bottom: 0;">
+                                                            Si no solicitaste el cambio de tu contraseña, comunícate con
+                                                            <b>[con quien?]</b> e ignora este correo.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- Button -->
+                                                <tr>
+                                                    <td class="container">
+                                                        <a href="http://www.wize.com" target="_blank" class="btn-action">Recupera tu contraseña</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="container">
+                                                        <p class="text-medium"
+                                                            style="margin-top: 42px; margin-bottom: 0;">
+                                                            Si no pudiste ingresar a través del botón, copia el
+                                                            siguiente enlace en tu navegador:
+                                                        </p>
+                                                        <a href="http://www.wize.com" target="_blank"
+                                                            class="link">www.wize.com/asueiahklej23-a1sd57as8d4a5sd-123</a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="container">
+                                                        <h3 class="email-subtitle" style="margin-top: 24px;">¡Estamos
+                                                            aquí para ayudar!</h3>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="container">
+                                                        <p class="email-description text-center"
+                                                            style="margin-top: 6px;">
+                                                            Si tienes alguna pregunta, visita nuestro <a href="http://www.wize.com"
+                                                                target="_blank">Centro de ayuda</a>.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="container">
+                                                        <p class="text-small text-center" style="margin-top: 58px;">
+                                                            Por favor, NO responder a este mensaje, es un envío
+                                                            automático.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="container">
+                                                        <div class="border-bottom"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
